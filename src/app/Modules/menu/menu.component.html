@@ -1,0 +1,15 @@
+<nav>
+    <ul class="menuItems">
+        <li><a href="#" data-item='Home'>Home</a></li>
+        <li class="dropdown"><a routerLink="products" >Products</a>
+            <div class="dropdown-content">
+              <a  routerLink="/products/p" routerLinkActive="active">Product 1</a>
+              <a  routerLink="/products/d" routerLinkActive="active" >Product 2</a>
+              <a  routerLink="/products/s" routerLinkActive="active"  >Product 3</a>
+            </div>
+        </li>
+        <li><a routerLink="cards">Cards</a></li>
+        <li><a routerLink="news" >News</a></li>
+    </ul>
+</nav>
+<router-outlet></router-outlet>
