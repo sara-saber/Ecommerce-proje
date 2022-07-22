@@ -1,3 +1,4 @@
+import { NewsService } from './../../services/news.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private service:NewsService) { }
 
   ngOnInit(): void {
     this.f();
